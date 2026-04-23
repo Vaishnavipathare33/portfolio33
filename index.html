@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vaishnavi Pathare Portfolio</title>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{font-size:62.5%; scroll-behavior:smooth;}
+body{background:#fff;}
+
+/* SCROLL BUTTON */
+.fa-arrow-up{
+position:fixed;
+bottom:40px;
+right:40px;
+background:red;
+color:#fff;
+padding:12px;
+border-radius:50%;
+display:none;
+cursor:pointer;
+z-index:999;
+}
+.fa-arrow-up.active{display:block;}
+
+/* NAVBAR */
+.navBar{
+position:fixed;
+top:0;
+width:100%;
+background:#fff;
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.navBar ul{display:flex; list-style:none;}
+.navBar ul li{margin:0 15px;}
+.navBar a{text-decoration:none;color:#333;font-size:1.5rem;}
+.navBar a:hover{color:red;}
+
+/* HOME */
+.sec1{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding-top:100px;
+}
+
+.sec1__container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:90%;
+flex-wrap:wrap;
+}
+
+.sec1__content h1{
+font-size:4rem;
+margin:10px 0;
+}
+
+.sec1__content span{color:red;}
+
+.sec1__content a{
+display:inline-block;
+margin-top:20px;
+padding:10px 25px;
+background:red;
+color:#fff;
+border-radius:5px;
+text-decoration:none;
+}
+
+.sec1__imgBx{
+position:relative;
+width:350px;
+}
+
+.sec1__imgBx img{
+width:100%;
+border-radius:10px;
+}
+
+.sec1__design1,
+.sec1__design2,
+.sec1__design3,
+.sec1__design4{
+position:absolute;
+background:linear-gradient(red, darkred);
+border-radius:50%;
+opacity:.5;
+}
+
+.sec1__design1{top:-20px;left:-20px;width:60px;height:60px;}
+.sec1__design2{bottom:-20px;right:-20px;width:60px;height:60px;}
+.sec1__design3{top:0;left:0;width:100%;height:100%;border-radius:20px;opacity:.2;}
+.sec1__design4{top:30%;left:-30px;width:80px;height:80px;}
+
+/* ABOUT */
+.sec2{
+padding:80px 20px;
+text-align:center;
+}
+
+.sec2__container{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.sec2 img{
+width:150px;
+border-radius:50%;
+}
+
+.sec2__aboutme2{
+max-width:500px;
+font-size:1.6rem;
+}
+
+/* SKILLS */
+.sec3{
+background:#111;
+color:#fff;
+padding:80px 20px;
+text-align:center;
+}
+
+.sec3__container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.sec3__card{
+background:#222;
+padding:30px;
+border-radius:10px;
+width:150px;
+}
+
+/* CONTACT */
+.sec4{
+padding:80px 20px;
+text-align:center;
+}
+
+.sec4 input{
+padding:10px;
+margin:10px;
+width:250px;
+}
+
+.sec4 button{
+padding:10px 20px;
+background:red;
+color:#fff;
+border:none;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<i class="fas fa-arrow-up" onclick="scrollToTop()"></i>
+
+<!-- NAVBAR -->
+<div class="navBar">
+<h2>Vaishnavi</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
+<!-- HOME -->
+<section class="sec1" id="home">
+<div class="sec1__container">
+
+<div class="sec1__content">
+<h1>Hi,</h1>
+<h1>I'am <span>Vaishnavi Pathare</span></h1>
+<h1>Computer Science Student</h1>
+
+<a href="https://www.instagram.com/various8124/" target="_blank">
+Follow Me <i class="fab fa-instagram"></i>
+</a>
+</div>
+
+<div class="sec1__imgBx">
+<img src="https://thumbs.dreamstime.com/b/smiling-girl-student-textbooks-portfolio-13596533.jpg">
+
+<span class="sec1__design1"></span>
+<span class="sec1__design2"></span>
+<span class="sec1__design3"></span>
+<span class="sec1__design4"></span>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec2" id="about">
+
+<h2>About Me</h2>
+
+<div class="sec2__container">
+
+<div>
+<img src="https://thumbs.dreamstime.com/b/smiling-girl-student-textbooks-portfolio-13596533.jpg">
+<h3>Vaishnavi Pathare</h3>
+</div>
+
+<div class="sec2__aboutme2">
+<p>
+I am a passionate Computer Science student interested in web development.
+I enjoy creating modern, responsive websites and improving my skills.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="sec3" id="skills">
+
+<h2>Skills</h2>
+
+<div class="sec3__container">
+
+<div class="sec3__card"><h3>HTML</h3><p>90%</p></div>
+<div class="sec3__card"><h3>CSS</h3><p>80%</p></div>
+<div class="sec3__card"><h3>JavaScript</h3><p>60%</p></div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec4" id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: vpathare494@gmail.com</p>
+
+<form>
+<input type="email" placeholder="Enter Email"><br>
+<input type="text" placeholder="Message"><br>
+<button type="submit">Send</button>
+</form>
+
+</section>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+
+const tl = gsap.timeline();
+tl.from(".navBar",{y:-100,opacity:0});
+tl.from(".sec1__content h1",{y:50,opacity:0,stagger:.3});
+tl.from(".sec1__imgBx img",{x:100,opacity:0});
+</script>
+
+<script>
+window.addEventListener("scroll",()=>{
+document.querySelector(".fa-arrow-up")
+.classList.toggle("active",window.scrollY>200);
+});
+
+function scrollToTop(){
+window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
